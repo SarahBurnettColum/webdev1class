@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    position: fixed;
+    line-height: 150px;
+    font-family: monospace;
+    color: lawngreen;
+    background-color: yellowgreen;
+    
+}
+
+
+h3 {
+    color: rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+h3 {
+    position: absolute;
+    background-color: red;
+}
+
+img {
+    position: static;
+    height: 900px;    
+}
+
+p {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
