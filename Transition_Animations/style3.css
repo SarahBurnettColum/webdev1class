@@ -1,0 +1,32 @@
+.activator {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.box {
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    transition-property: color;
+   
+    transition: all 8s 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.activator:hover .box {
+    background-color: chartreuse;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: rotate(720deg);
+}
