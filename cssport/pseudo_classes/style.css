@@ -1,0 +1,19 @@
+a:link {
+    color: yellowgreen;
+}
+
+a:visited {
+    color: tomato;
+}
+
+div:hover {
+    color: teal;
+}
+
+a:active {
+    color: silver;
+}
+
+a:focus {
+    color: blueviolet;
+}
