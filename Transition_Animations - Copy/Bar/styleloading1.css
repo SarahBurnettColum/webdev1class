@@ -1,0 +1,45 @@
+body {
+    background-color: aqua;
+}
+.rect {
+    width: 500px;
+    height: 50px;
+    background-color: black;
+    border-color: chartreuse;
+    border-radius: 50px;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color {
+    10% {
+        background-color: maroon;
+    }
+    20% {
+        background-color: slateblue;
+        transform: scale(1)
+    }
+    30% {
+        background-color: turquoise;
+    }
+    40% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blueviolet;
+    }
+    60% {
+        background-color: blueviolet;
+    }
+    70% {
+        background-color: cornflowerblue;
+    }
+    80% {
+        transform: scale(50)
+    }
+
+    100% {
+        background-color: seagreen;
+    }
+}
