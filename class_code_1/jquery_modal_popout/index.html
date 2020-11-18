@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="../libs/jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="../../">Return to Website Development I Class Portfolio</a>
+
+    <title>JQuery Pop-Up</title>
+</head>
+<body>
+<br>
+  <button id="myBtn">Don't Touch Me!</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>OH MY GOD, WHAT'S WRONG WITH YOU?! WHY DID YOU CLICK ON ME? ARE YOU BUTTONIST OR SOMETHING?!</p>
+  </div>
+
+</style>
+</head>
+<body>
+
+<button id="myBtn"></button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>How <i>DARE</i> you touch me!!!</p>
+  </div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+     
+</body>
+</html>
