@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../libs/p5.min.js"></script>
+    <script src="../class_code_1/libs/jquery-3.5.1.min.js"></script>
+    
+
+    <title>Art Portfolio Website</title>
+</head>
+<body>
+    <a href="../website2/index.html">Highlight Artwork Website</a>
+    <header>
+        <h1>Sarah Burnett's Art Portfolio</h1>
+    </header>
+<br>
+<p>
+    <h2>About Me</h2>
+<br>
+        <h4>Hello, my name is Sarah Burnett. Thank you for checking out my art portfolio website.
+        <br>
+        I'm from the western suburbs of Chicago, and have most of my drawing dedicated to things non-realism orientened. I draw animals (mainly horses) as well as mystical creatures, original characters, and anything that can be taken from my mind instead of the things I see. I am, however, beginning to get into 'picture drawing' where I take a photograph and digitally draw over it to make it look unique and artistic. I do not use any apps to automatically do the work for me.
+        <br>
+        Below are just a few of my many drawings, photos, and creations that you can browse over.
+        <br>
+        As a side note, it is difficult to come up with new ideas all the time, so, if you are interested in a more personal drawing, I'd be more than willing to work with an idea you have and make it a commission! 
+</p>
+<br>
+        <b><i>Thank you!</b></i></h4>
+<br>
+
+   <b>
+
+    <img src="pictures/taco_cat.png" alt="1"><figcaption><i>Taco Cat</i>| Digital Art</figcaption>
+
+    <img src="pictures/just_a_touch.jpg" alt="2"><figcaption><i>Just A Touch</i>| Ink on Paper</figcaption>
+    
+    <img src="pictures/elegant_disgrace.jpg" alt="3"><figcaption><i>Elegant Disgrace</i>| Photograph</figcaption>
+    
+    <img src="pictures/double_vision.jpg" alt="4"><figcaption><i>Double Vision</i>| Photograph with Filter</figcaption>
+    
+    <img src="pictures/jasper.png" alt="5"><figcaption><i>Jasper</i>| Digital Art</figcaption>
+    
+    <img src="pictures/catodile_dundee.jpg" alt="6"><figcaption><i>Catodile Dundee 'Now this... THIS is an eye.'</i>| Photograph</figcaption>
+    
+    <img src="pictures/devils_doorway.jpg" alt="7"><figcaption><i>Devil's Doorway at Devil's Lake State Park</i>| Photograph</figcaption>
+
+</b>
+
+    <br>
+
+    <h3>Survey For Those Interested in Purchasing Any Art:</h3>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdS2jrnU_l6g-wUpVzVzoaguqZcAgpIGuQcpywOpkxX56YKfw/viewform?embedded=true"></iframe>
+
+    <button id="myBtn">Bonus Information! (Click and Scroll Down!)</button>
+
+    <div id="myModal" class="modal">
+    
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Did you know that this website was made purely by Visual Source Code, CSS Style, HTML Index, and JavaScript? Well, it was, and it was made as a final for a web development class. This website will no doubt continue to be constructed and perfected--if you have any critiques or feedback, please fill out the Google Forms survey I created.
+          <b>
+            Thank you so much! :D
+          </b>
+        </p>
+      </div>
+
+      <button id="myBtn"></button>
+    
+      <div id="myModal" class="modal">
+      
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        </div>
+      
+      </div>
+
+    <div id="sketch-parent"></div>
+
+    <script>
+      
+      var modal = document.getElementById("myModal");
+      
+      var btn = document.getElementById("myBtn");
+      
+      var span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+    <script src="sketch.js"></script>
+    
+</body>
+</html>
